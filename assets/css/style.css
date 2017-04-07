@@ -1,5 +1,6 @@
 body {
   height: 100%;
+  width: 100%;
   background-color: #333;
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -21,6 +22,7 @@ p{
   transition: all .2s ease-in-out;
 }
 .navbar{
+  padding: 20px 0;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
 }
@@ -31,22 +33,16 @@ p{
   color: #fff;
 }
 
-.navbar-header{
-    margin-left: 40px !important;
-    margin-top: 20px !important;
-}
-.navbar-right{
-     margin-right: 40px !important;
-    margin-top: 20px !important;
-}
-
 nav.navbar{
+    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 
+
 nav.navbar.shrink{
-    min-height: 5px;
-    color: black;
+    height: 35px;
+    padding: 0;
+    background: black;
 }
 .intro{
   color: #fff;
@@ -92,5 +88,5 @@ nav.navbar.shrink{
 
 
 .container{
-  width: 100%;
+  
 }
