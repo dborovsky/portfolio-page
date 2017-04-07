@@ -1,0 +1,96 @@
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  color: #979797;
+  
+}
+h1, h2{
+  margin: 0 0 35px;
+}
+p{
+  font-size: 20px;
+}
+
+.a{
+  color: #e74c3c;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.navbar{
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+}
+.nav li a:hover, .nav li a:focus{
+  background-color: rgba(255,255,255,.2);
+}
+.navbar-custom a{
+  color: #fff;
+}
+
+.navbar-header{
+    margin-left: 40px !important;
+    margin-top: 20px !important;
+}
+.navbar-right{
+     margin-right: 40px !important;
+    margin-top: 20px !important;
+}
+
+nav.navbar{
+    transition: all 0.4s ease;
+}
+
+nav.navbar.shrink{
+    min-height: 5px;
+    color: black;
+}
+.intro{
+  color: #fff;
+  text-align: center;
+}
+.brand-heading{
+  font-size: 60px;
+   margin-top: 30px;
+}
+.intro-text{
+  font-size: 25px;
+}
+.content-section{
+  padding-top: 100px;
+}
+.text-center{
+  text-align: center;
+}
+#portfolio{
+  background-color: white;
+}
+#portfolio .portfolio-item {
+    margin: 0 0 30px;
+}
+
+#portfolio .portfolio-item .portfolio-link{
+  display: block;
+  possition: relative;
+  margin: 0 auto;
+  width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(231,76,60,.9);
+  transition: all ease .5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+       
+}
+
+
+.container{
+  width: 100%;
+}
