@@ -16,7 +16,7 @@
 
 <body>
 <nav class="navbar navbar-custom navbar-fixed-top">
-  <div class="container">
+  <div class="container menu">
     <div class="navbar-header">
       <a href="#" class="navbar-brand">Dmitriy Borowskiy</a>       
     </div>
@@ -37,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div id="intro-zone" style="display: block; margin-top: 70px">
+          <div id="intro-zone" style="display: block; margin-top: 20%">
             <img src="http://bostil.ru/assets/images/logo.png">
             <h1 class="brand-heading">Dmitriy Borowskiy</h1>
             <p class="intro-text">
@@ -63,29 +63,74 @@
     </div>
     <div class="row">
       <div class="col-sm-4 portfolio-item">
-        <a href="" class="portfolio-link"> 
+        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
           <div class="caption">
-            <div class="caption-content">
+            <div class="caption-content">  
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
-            <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491480123/icon-timer_tylcrf.png"/>
           </div>
-        </a>        
+          <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491480123/icon-timer_tylcrf.png" 
+              class="img-responsive">
+        </a>
+      
+      </div>
+  
+                
+      
+      <div class="col-sm-4 portfolio-item">
+        <a href="#" class="portfolio-link">
+          <div class="caption">
+            <div class="caption-content">  
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491480123/icon-timer_tylcrf.png" 
+              class="img-responsive">
+        </a>
       </div>
       <div class="col-sm-4 portfolio-item">
-        
+        <a href="#" class="portfolio-link">
+          <div class="caption">
+            <div class="caption-content">  
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491480123/icon-timer_tylcrf.png" 
+              class="img-responsive">
+        </a>
       </div>
       <div class="col-sm-4 portfolio-item">
-        
+        <a href="#" class="portfolio-link">
+          <div class="caption">
+            <div class="caption-content">  
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491480123/icon-timer_tylcrf.png" 
+              class="img-responsive">
+        </a>
       </div>
       <div class="col-sm-4 portfolio-item">
-        
+        <a href="#" class="portfolio-link">
+          <div class="caption">
+            <div class="caption-content">  
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491480123/icon-timer_tylcrf.png" 
+              class="img-responsive">
+        </a>
       </div>
       <div class="col-sm-4 portfolio-item">
-        
-      </div>
-      <div class="col-sm-4 portfolio-item">
-        
+        <a href="#" class="portfolio-link">
+          <div class="caption">
+            <div class="caption-content">  
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491480123/icon-timer_tylcrf.png" 
+              class="img-responsive">
+        </a>
       </div>
     </div>
   </div>
@@ -94,6 +139,35 @@
 <section class="contact">Section Contact</section>
 <section class="footer">Section footer</section>
 
+<!-- modal windows portfolio -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" hidden="true" 
+    role="dialog" style="display: none;">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+          
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Exmaple 1</h2>
+            <hr class="star-primary">
+            <img src="http://res.cloudinary.com/dgwtbqayv/image/upload/v1491479794/2x-icon-timer_mitxof.png" class="img-responsive">
+            <button class="btn btn-default" data-dismiss="modal">
+              <i class="fa fa-times">
+                Close
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"
 	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
