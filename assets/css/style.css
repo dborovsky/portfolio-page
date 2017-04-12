@@ -4,15 +4,21 @@ body {
   background-color: #333;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
   color: #979797;
   
 }
-h1, h2{
+h1, h2, h3, h4{
   margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
+
 p{
-  font-size: 20px;
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .a{
@@ -137,6 +143,10 @@ nav.navbar.shrink{
     background-color: transparent;
     cursor: pointer;
 }
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
@@ -188,13 +198,196 @@ nav.navbar.shrink{
     background-color: #e74c3c;
 }
 
+.content-section {
+    padding-top: 100px;
+}
 
+#about{
+    width: 100%;
+    background-color: white;
+}
+.fade2{
+	display: none;
+}
 
+.ball {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: bounce 1.2s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation: bounce 1.2s;
+    -moz-animation-delay: 0.5s;
+    animation: bounce 1.2s;
+    animation-delay: 0.5s;
+}
+
+.ball:hover {
+  -webkit-animation: bounce 1.2s;
+  -moz-animation: bounce 1.2s;
+  animation: bounce 1.2s;
+}
+
+.rosso {
+    color: #e74c3c;
+}
+
+.about-avatar {
+    text-align: center;
+    border: 4px solid #fff;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.45);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.45);
+    box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.45);
+}
+
+.justify {
+    text-align: justify!important;
+}
+
+.facebook-color {
+	color: #8b9dc3!important;
+	border-color: #8b9dc3!important;
+}
+
+.facebook-color:hover {
+	background-color: #8b9dc3!important;
+	color: #fff!important;
+}
+
+.twitter-color {
+	color: #63B3FF!important;
+	border-color: #63B3FF!important;
+}
+
+.twitter-color:hover {
+	background-color: #63B3FF!important;
+	color: #fff!important;
+}
+
+.footer-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    height: 450px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
 
 @media(min-width:767px) {
+    .content-section {
+        padding-top: 100px;
+    }
+    
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+    
+    
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
 }
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: translateY(0%);
+	}
+	20% {
+		-webkit-transform: translateY(-120%)                              rotate(20deg);
+	}
+	30% {
+		-webkit-transform: translateY(0%);
+	}
+	40% {
+		-webkit-transform: translateY(-25%);
+	}
+	50% {
+		-webkit-transform: translateY(0%);
+	}
+	60% {
+		-webkit-transform: translateY(-12%);
+	}
+	70% {
+		-webkit-transform: translateY(0%);
+	}
+	80% {
+		-webkit-transform: translateY(-6%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}
+
+@-moz-keyframes bounce {
+	0% {
+		-moz-transform: translateY(0%);
+	}
+	20% {
+		-moz-transform: translateY(-120%)                              rotate(20deg);
+	}
+	30% {
+		-moz-transform: translateY(0%);
+	}
+	40% {
+		-moz-transform: translateY(-25%);
+	}
+	50% {
+		-moz-transform: translateY(0%);
+	}
+	60% {
+		-moz-transform: translateY(-12%);
+	}
+	70% {
+		-moz-transform: translateY(0%);
+	}
+	80% {
+		-moz-transform: translateY(-6%);
+	}
+	100% {
+		-moz-transform: translateY(0%);
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0%);
+	}
+	20% {
+		transform: translateY(-120%)                              rotate(20deg);
+	}
+	30% {
+		transform: translateY(0%);
+	}
+	40% {
+		transform: translateY(-25%);
+	}
+	50% {
+		transform: translateY(0%);
+	}
+	60% {
+		transform: translateY(-12%);
+	}
+	70% {
+		transform: translateY(0%);
+	}
+	80% {
+		transform: translateY(-6%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+
 
 
