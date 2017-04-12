@@ -14,17 +14,25 @@
   <![endif]-->
 </head>
 
-<body>
-<nav class="navbar navbar-custom navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse">
   <div class="container menu">
-    <div class="navbar-header">
-      <a href="#" class="navbar-brand">Dmitriy Borowskiy</a>       
+    <div class="navbar-header page-scroll">
+      <button class="navbar-toggle" data-toggle = "collapse" 
+        data-target=".navbar-main-collapse">
+        <li class="fa fa-bars"></li>
+      </button>
+      <a href="#page-top" class="navbar-brand page-scroll">Dmitriy Borowskiy</a>       
     </div>
-    <div class="navbar-right">
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse 
+      style="height: auto;">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Portfolio</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="hidden">
+          <a class="page-scroll" href="#page-top"></a>
+        </li>
+        <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+        <li><a class="page-scroll" href="#about">About me</a></li>
+        <li><a class="page-scroll" href="#contact">Contact</a></li>
       </ul>
     </div>                                  
   </div>
@@ -47,6 +55,11 @@
                 <strong>- EST. 2012 -</strong>
               </small>
             </p>
+            <div class="page-scroll">
+                <a href="#portfolio" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
           </div>
         </div>
       </div>
@@ -373,5 +386,8 @@
 	<script src="https://use.fontawesome.com/2a32934d4f.js">
 	</script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/scrolling-nav.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+	
 </body>
 </html>

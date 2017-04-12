@@ -27,10 +27,35 @@ p{
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover, .btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
 .navbar{
   padding: 20px 0;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
+  background-color: #000;
+  
+  
 }
 .nav li a:hover, .nav li a:focus{
   background-color: rgba(255,255,255,.2);
@@ -45,19 +70,13 @@ nav.navbar{
 }
 
 
-nav.navbar.shrink{
-    height: 35px;
-    padding: 0;
-    background: black;
-    border-bottom: 1px solid rgba(255,255,255,.3);
-}
 .intro{
   width: 100%;
   color: #fff;
   text-align: center;
 }
 .brand-heading{
-  font-size: 60px;
+  font-size: 40px;
    margin-top: 30px;
 }
 .intro-text{
@@ -272,7 +291,6 @@ nav.navbar.shrink{
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    height: 450px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -280,9 +298,32 @@ nav.navbar.shrink{
     position: relative;
 }
 
+@media(max-width:766px){
+    nav.navbar {
+      height: auto;
+        padding: 0;
+        background: black;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+      
+    }
+    
+    
+}
+
 @media(min-width:767px) {
+    nav.navbar.shrink{
+        height: 35px;
+        padding: 0;
+        background: black;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+    
     .content-section {
         padding-top: 100px;
+    }
+    
+    .navbar {
+        background: 0 0;
     }
     
     #portfolio .portfolio-item {
