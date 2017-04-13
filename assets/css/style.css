@@ -3,6 +3,7 @@ body {
   width: 100%;
   background-color: #333;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   text-align: center;
   color: #979797;
   
@@ -304,7 +305,10 @@ nav.navbar{
         padding: 0;
         background: black;
         border-bottom: 1px solid rgba(255,255,255,.3);
-      
+    }
+    
+    #portfolio .portfolio-item .portfolio-link .caption{
+        width: 360px;
     }
     
     
